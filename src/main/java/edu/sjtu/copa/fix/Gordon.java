@@ -25,7 +25,8 @@ public class Gordon {
 		path = ConfigManager.getConfig("light-copa-config.ini", section, key);
 		datum = new Datum(path);
 		logger = new BufferedWriter(new OutputStreamWriter(
-				new FileOutputStream(ConfigManager.getConfig("light-copa-config.ini", "output-dir", "LOG_PATH"))));//nltk-stanford-idf-log1.txt
+				new FileOutputStream(ConfigManager.getConfig("light-copa-config.ini", "output-dir", "LOG_PATH")+"gordon-Gu1w-log.txt")
+		));//nltk-stanford-idf-log1.txt
 		// Result/gordon-bing-log.txt; logGu251w/gordon-Gu1w-log.txt
 	}
 	

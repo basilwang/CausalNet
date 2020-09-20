@@ -35,9 +35,9 @@ public class JavaRegex {
 		Pattern nodewordp = Pattern.compile("\\((.*)/.* (.*)/");
 		Pattern nodeindexp = Pattern.compile("\\-(\\d).*\\-(\\d)");
 		
-		Matcher matcher = //nodeindexp.matcher(node);
-				nodewordp.matcher(node);
-				//nodePostagp.matcher(node);
+		Matcher matcher = //nodeindexp.matcher(node1);
+				//nodewordp.matcher(node1);
+				nodePostagp.matcher(node);
 				//nodep.matcher(node);
 		if(matcher.find()){
 			System.out.println(matcher.group(1));
@@ -57,6 +57,6 @@ public class JavaRegex {
 	//}
 	
 	public static void main(String[] args){
-		test3();
+		test2();
 	}
 }
